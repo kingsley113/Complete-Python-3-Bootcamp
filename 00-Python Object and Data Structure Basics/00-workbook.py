@@ -83,5 +83,26 @@
 # myList = [1,2,2,3,3,4,4,5,5,6,7,8,9,9,9,0]
 # print(set(myList))
 
-# BOOLEAN**********************************************************************
 
+# BOOLEAN**********************************************************************
+# True
+# False # capitalize True/False
+
+# FILE READ/WRITE**************************************************************
+# myFile = open('./00-Python Object and Data Structure Basics/test.txt')
+# contents = myFile.read()
+# print(contents)
+
+
+with open('./00-Python Object and Data Structure Basics/test.txt', mode='a') as newFile:
+	newFile.write('\nThird Line')
+
+# print(contents)
+with open('./00-Python Object and Data Structure Basics/test.txt', mode='w') as reset:
+	reset.write('First Line\nSecond Line')
+
+with open('./00-Python Object and Data Structure Basics/test.txt', mode='r') as newFile:
+	contents = newFile.read()
+	# modes: r = read, w = write (overwrite), a = append, r+ = reading and writing, w+ = overwrite or create new file
+
+print(contents)
