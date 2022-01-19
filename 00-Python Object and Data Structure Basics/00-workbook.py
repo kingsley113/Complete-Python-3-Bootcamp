@@ -97,6 +97,11 @@
 with open('./00-Python Object and Data Structure Basics/test.txt', mode='a') as newFile:
 	newFile.write('\nThird Line')
 
+with open('./00-Python Object and Data Structure Basics/test.txt', mode='r') as newFile:
+	contents = newFile.read()
+
+print(contents)
+
 # print(contents)
 with open('./00-Python Object and Data Structure Basics/test.txt', mode='w') as reset:
 	reset.write('First Line\nSecond Line')
